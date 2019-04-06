@@ -1,0 +1,116 @@
+@import 'colors';
+@import 'mixins';
+
+#testmonials{
+  // background-color: red;
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    // padding-left: 100px;
+
+    .title{
+      width: 50%;
+      position: relative;
+
+      .hexa.parent{
+        border: solid #EEE;
+        border-width: 2px 0px;
+        box-sizing: content-box;
+        // border-radius: 5px;
+        background-color: transparent;
+        transform: rotate(15deg);
+  
+        &::before{
+          border: solid #EEE;
+          border-width: 2px 0px;
+          box-sizing: content-box;
+          // border-radius: 5px;
+          background-color: transparent;
+        }
+  
+        &::after{
+          border: solid #EEE;
+          border-width: 2px 0px;
+          box-sizing: content-box;
+          // border-radius: 5px;
+          background-color: transparent;
+        }
+  
+        > .hexa{
+          transform: rotate(0);
+          font-size: 0.8em;
+          background-color: #fff;
+          z-index: 0;
+          justify-content: space-between;
+          
+          > .hexa{
+            transform: rotate(0);
+            font-size: 0.13em;
+            z-index: 55555;
+            transform: rotate(15deg);
+            position: relative;
+            top: -26px;
+            left: 3px;
+            // transform: rotate(-15deg);
+    
+            @include blue(to bottom);
+            &::before {
+              @include blue(to right bottom);      
+            }
+    
+            &::after {
+              @include blue(to left bottom);
+            }
+          }
+  
+          h3{
+            text-transform: capitalize;
+            margin-top: 40px;
+            font-size: 1.7em;
+            color: $main-text;
+            transform: rotate(-30deg);    
+            z-index: 5555; 
+            transform: rotate(-15deg);
+  
+          }
+          
+        }
+      }
+    }
+
+    .info{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      > div{
+        width: 33.33333%;
+        margin-bottom: 25px;
+        text-align: left;
+        font-weight: bolder;
+        font-size: 1.2em;
+        span{
+          color: $sub-text;
+          font-size: 0.8em;
+          font-weight: normal;
+        }
+      }
+    }
+
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    font-size: 3em;
+    color: $sub-text;
+    i{
+
+    }
+  }
+}

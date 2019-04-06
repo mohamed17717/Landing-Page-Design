@@ -1,0 +1,17 @@
+@mixin orange($direction) {
+  background: linear-gradient($direction, #ff7f00, #ff7f00, #ff7f00, #ff7f00, #ff7f00, #ff8300, #ff8600, #ff8a00, #ff9200, #ff9b00, #ffa300, #ffab00);
+}
+
+@mixin blue ($direction) {
+  background: linear-gradient($direction, #26b1d2, #20b4da, #1ab7e3, #18baeb, #19bdf4, #12c2f8, #0ac7fb, #00ccff, #00d5ff, #00deff, #06e7ff, #27efff);
+}
+
+@mixin darkBlue ($direction) {
+  background: linear-gradient($direction, #133673, #164085, #184b98, #1956ab, #1961be, #1b6bcb, #1d76d7, #1f81e4, #2a8eeb, #389bf2, #46a7f9, #55b4ff);
+}
+
+$blue-color:  #18baeb;
+
+$sub-text: rgb(219, 219, 219);
+$sub-text-sharp: rgb(161, 161, 161);
+$main-text: rgb(76, 77, 83);

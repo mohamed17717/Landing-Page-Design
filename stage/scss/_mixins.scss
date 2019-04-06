@@ -1,0 +1,41 @@
+@import 'colors';
+
+@mixin hexa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 17.32em;
+  border-radius: 1em/0.5em;
+  transform: rotate(30deg);
+  background: orange;
+  color: white;
+
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+  }
+
+  &::before {
+    transform: rotate(60deg);
+  }
+
+  &::after {
+    transform: rotate(-60deg);
+  }
+
+  i {
+    font-size: 8em;
+    z-index: 3;
+    transform: rotate(-30deg)
+  }
+}
+

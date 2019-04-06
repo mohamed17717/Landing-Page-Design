@@ -1,0 +1,107 @@
+@import 'colors';
+@import 'mixins';
+
+#about{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  .text{
+    width: 50%;
+    max-width: 400px;
+    padding-left: 20px;
+    .header{
+      .hexa{
+        margin-right: 0;
+        margin-left: 0;
+        @include blue(to bottom);
+        &::before {
+          @include blue(to right bottom);      
+        }
+
+        &::after {
+          @include blue(to left bottom);
+        }
+      }
+
+      .title{
+        line-height: 1.6em;
+      }
+
+      >*{
+        margin-bottom: 20px;
+      }
+    }
+
+    .content{
+      ul{
+        list-style: none;
+        li{
+          display: flex;
+          align-items: flex-start;
+          // justify-content: space-between;
+          margin-bottom: 20px;
+          color: $sub-text-sharp;
+          font-size: 0.83em;
+          line-height: 1.8em;
+
+          .icon{
+            margin-right: 15px;
+            color: $blue-color;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+    
+    .footer{
+      span{
+        color: $blue-color;
+      }
+    }
+  }
+
+  .image{
+    // width: 50%;
+    width: 50%;
+
+    .hexa.parent{
+      border: solid #EEE;
+      border-width: 2px 0px;
+      box-sizing: content-box;
+      // border-radius: 5px;
+      background-color: transparent;
+      transform: rotate(15deg);
+
+      &::before{
+        border: solid #EEE;
+        border-width: 2px 0px;
+        box-sizing: content-box;
+        // border-radius: 5px;
+        background-color: transparent;
+      }
+
+      &::after{
+        border: solid #EEE;
+        border-width: 2px 0px;
+        box-sizing: content-box;
+        // border-radius: 5px;
+        background-color: transparent;
+      }
+
+      > .hexa{
+        transform: rotate(0);
+        font-size: 0.8em;
+        background-color: #fff;
+        z-index: 0;
+        justify-content: space-between;
+
+        img{
+          width: 120%;
+          z-index: 555;
+          transform: rotate(-15deg);
+          margin: -10px;
+        }
+      }
+    }
+  }
+}
