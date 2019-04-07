@@ -1,0 +1,106 @@
+@media (max-width: 900px){
+
+  #faq .content .card{
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 850px){
+
+  #testmonials > .content{
+    flex-direction: column;
+    padding-bottom: 0 !important;
+
+    .info{
+      padding-left: 0 !important;
+
+      >div{
+        margin-left: 20px;
+      }
+    }
+    > * {
+      margin-bottom: 25px;
+    }
+  }
+
+}
+
+@media (max-width: 790px){
+
+  #about{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    > * {
+      margin-bottom: 25px;
+    }
+  }
+
+  #home .background .header{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    nav, .login{
+      display: none !important;
+    }
+
+    .collapse-btn, .collapse-content>*{
+      display: initial !important;
+    }
+
+    .collapse-content{
+      background-color: rgba(0, 136, 0, 0.205);
+      width: 100%;
+      margin-top: 25px;
+      padding: 5px;
+      text-align: center;
+      ul li{
+        display: block;
+      }
+    }
+  }
+
+  #home .background .content{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    >*{
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+
+    img{
+      max-width: 250px;
+    }
+  }
+
+}
+
+@media (max-width: 750px){
+  footer{
+    input{
+      width: 50%;
+    }
+
+    > .footer{
+      flex-direction: column;
+
+      > * {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px){
+  #home .cards-container{
+    flex-direction: column;
+    align-items: center;
+    .card{
+      width: 100% !important;
+      max-width: 70% !important;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}

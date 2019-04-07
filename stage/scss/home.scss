@@ -51,6 +51,21 @@
           margin-left: 20px;
         }
       }
+
+      .collapse-btn, .collapse-content{
+        display: none;
+      }
+
+      .collapse-btn{
+        padding: 0 35px;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 1.2em;
+        position: relative;
+      }
+
+      .collapse-content{
+      }
     }
 
     .content{
@@ -120,6 +135,7 @@
       margin-top: -150px;
       .card{
         max-width: 220px;
+        width: 30%;
         background-color: #fff;
         text-align: center;
         padding: 25px;
