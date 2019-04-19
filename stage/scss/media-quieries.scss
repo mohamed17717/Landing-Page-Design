@@ -78,6 +78,9 @@
 
 @media (max-width: 750px){
   footer{
+    clip-path: none;
+    padding-top: 50px;
+    border-radius: 25px 25px 0 0;
     input{
       width: 50% !important;
     }
@@ -89,6 +92,12 @@
         margin-bottom: 10px;
       }
     }
+  }
+
+  #home .background{
+    clip-path: none;
+    padding-bottom: 130px;
+    border-radius: 0 0 25px 25px;
   }
 }
 
