@@ -2,7 +2,7 @@
 
 Putting my skills together to design this.\
 Note **photoshop** is not one of my skills so it might not 100% the same.
-![pic of the design](zercurity_mainpage_big_2x.png)
+![pic of the design](design.png)
 
 ## deploy
 
