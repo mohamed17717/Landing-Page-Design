@@ -4,7 +4,7 @@ Putting my skills together to design this.\
 Note **photoshop** is not one of my skills so it might not 100% the same.\
 <!-- ![pic of the design](design.png) -->
 <p align="center">
-  <img src="design.png" width="80%"/>
+  <img src="design.png" width="50%"/>
 </p>
 
 ## deploy
